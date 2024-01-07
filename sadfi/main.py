@@ -1,6 +1,11 @@
 import subprocess
 import json
+import logging
 from tabulate import tabulate
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def scan_wifi_networks():
     try:
@@ -8,7 +13,7 @@ def scan_wifi_networks():
         networks = json.loads(result)
         return networks
     except Exception as e:
-        print(f"Error: {e}")
+        logger.error(f"Error during Wi-Fi scan: {e}")
         return None
 
 def header():
@@ -16,7 +21,7 @@ def header():
     print('This SadSec tool allows access to all last wifi scan information.\n')
     return None
 
-if __name__ == "__main__":
+def main():
     wifi_data = scan_wifi_networks()
     if wifi_data:
         table_headers = ["SSID", "BSSID", "Frequency", "RSSI"]
@@ -32,9 +37,10 @@ if __name__ == "__main__":
             for network in wifi_data
         ]
 
-        # Header flag
         header()
-
         print(tabulate(table_data, headers=table_headers, tablefmt="grid"))
     else:
         print("Could not scan for networks or no networks found.")
+
+if __name__ == "__main__":
+    main()
