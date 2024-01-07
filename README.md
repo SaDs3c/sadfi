@@ -42,4 +42,11 @@ This SadSec tool allows access to all last Wi-Fi scan information.
 
 ## Contributing
 
-If you would like to contribute to Sad-Fi, feel free to open an issue or submit a pull request on the GitHub repository.
+If you would like to contribute to Sad-Fi, feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/SaDs3c/Sad-Fi)
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+https://github.com/SaDs3c/Sad-Fi
