@@ -46,7 +46,4 @@ If you would like to contribute to Sad-Fi, feel free to open an issue or submit 
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-https://github.com/SaDs3c/Sad-Fi
+This project is licensed under the [MIT License](https://github.com/SaDs3c/Sad-Fi/blob/main/LICENSE) - see the LICENSE file for details.
