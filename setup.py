@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='sad-Fi',
+    name='sadfi',
     version='0.1',
     packages=['sadfi'],
     install_requires=[
@@ -9,7 +9,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'sad-Fi=sadfi.main:main',
+            'sadfi=sadfi.main:main',
         ],
     },
 )
