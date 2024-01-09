@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name='sadfi',
+    name='sadfii',
     version='0.1',
-    packages=['sadfi'],
+    packages=['sadfii','sadfi'],
     install_requires=[
         'tabulate',
     ],
