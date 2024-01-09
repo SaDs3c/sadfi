@@ -1,15 +1,15 @@
-# Sad-Fi  
+# sadfi  
 
 ### (SADSEC Wi-Fi)
 
-Sad-Fi is a Python package that allows access to the last Wi-Fi scan information on Termux using the `termux-wifi-scaninfo` command. It provides a simple command-line interface to display Wi-Fi scan results in a tabular format.
+sadfi is a Python package that allows access to the last Wi-Fi scan information on Termux using the `termux-wifi-scaninfo` command. It provides a simple command-line interface to display Wi-Fi scan results in a tabular format.
 
 ## Installation
 
-You can install Sad-Fi using `pip`:
+You can install sadfi using `pip`:
 
 ```bash
-pip install sad-Fi
+pip install sadfi
 
 ```
 
@@ -17,10 +17,10 @@ pip install sad-Fi
 
 ## Usage
 
-After installation, you can use Sad-Fi by running the following command:
+After installation, you can use sadfi by running the following command:
 
 ```bash
-sad-Fi
+sadfi
 ```
 
 This will display a table with information about the last Wi-Fi scan.
@@ -42,8 +42,8 @@ This SadSec tool allows access to all last Wi-Fi scan information.
 
 ## Contributing
 
-If you would like to contribute to Sad-Fi, feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/SaDs3c/Sad-Fi)
+If you would like to contribute to sadfi, feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/SaDs3c/sadfi)
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/SaDs3c/Sad-Fi/blob/main/LICENSE) - see the LICENSE file for details.
+This project is licensed under the [MIT License](https://github.com/SaDs3c/sadfi/blob/main/LICENSE) - see the LICENSE file for details.
