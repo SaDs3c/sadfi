@@ -1,8 +1,8 @@
 import unittest
 from unittest.mock import patch, MagicMock
 #from sadfi.main import scan_wifi_networks, header
-from sadfi.main import scan_wifi_networks, header
-
+from sadfi.sadwifi.main import scan_wifi_networks, header
+from io import StringIO
 
 class TestSadFi(unittest.TestCase):
 
@@ -15,17 +15,18 @@ class TestSadFi(unittest.TestCase):
 
         self.assertIsNotNone(result)
         self.assertEqual(len(result), 1)
-        self.assertEqual(result[0]["ssid"], "TestSSID")
+        self.assertEqual(result["networks"][0]["ssid"], "TestSSID")
 
     @patch('subprocess.check_output', side_effect=Exception("Mocked Exception"))
-    def test_scan_wifi_networks_failure(self, mock_check_output):
+    def test_scan_wifi_networks_failure(self, mock_check_read):
         result = scan_wifi_networks()
 
         self.assertIsNone(result)
 
     def test_header(self):
-        # Redirect stdout to capture print output
-        with unittest.mock.patch('sys.stdout', new_callable=unittest.mock.StringIO) as mock_stdout:
+        #hdr  = header()
+
+        with unittest.mock.patch('sys.stdout', new_callable=StringIO) as mock_stdout:
             header()
 
         result = mock_stdout.getvalue().strip()

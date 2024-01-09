@@ -9,7 +9,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'sadfi=sadfi.main:main',
+            'sadfi=sadwifi.main:main',
         ],
     },
 )
