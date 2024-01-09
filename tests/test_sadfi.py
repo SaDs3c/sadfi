@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch, MagicMock
 #from sadfi.main import scan_wifi_networks, header
-from sadfii.sadfi.main import scan_wifi_networks, header
+from sadfi.main import scan_wifi_networks, header
 
 
 class TestSadFi(unittest.TestCase):
